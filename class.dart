@@ -15,7 +15,7 @@ void main() {
   person1.name = "Syed Hafi";
   person1.age = 25;
   person1.address = "Kohat";
-  person1.isStudent = false;
+  person1.isStudent = true;
   person1.displayInfo();
 
   //object for Student class with name student1
