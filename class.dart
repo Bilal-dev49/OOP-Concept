@@ -12,7 +12,7 @@ void main() {
   //Example : Like ford is blueprint (class) or model and now it has multiple objects
   Person person1 = Person();
   //calling method
-  person1.name = "Syed M Hafi";
+  person1.name = "Syed Hafi";
   person1.age = 25;
   person1.address = "Kohat";
   person1.isStudent = false;
