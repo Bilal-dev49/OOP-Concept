@@ -11,11 +11,12 @@ void main() {
   //creating another object
   //Example : Like ford is blueprint (class) or model and now it has multiple objects
   Person person1 = Person();
-  //calling method
+
   person1.name = "Syed Hafi";
   person1.age = 25;
   person1.address = "Kohat";
   person1.isStudent = true;
+  //calling method
   person1.displayInfo();
 
   //object for Student class with name student1
