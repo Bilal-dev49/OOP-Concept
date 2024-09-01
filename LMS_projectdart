@@ -1,4 +1,5 @@
 void main(){
+  Book book1 = Book();
 
 }
 class Book{
@@ -9,4 +10,9 @@ class Book{
 
   Book(this.title, this.author, this.isbn, this.isAvailablle);
 }
-class 
+class Libaray{
+  List<Book> books = [];
+  void addBook(Book book){
+    books.add(book);
+  }
+}
