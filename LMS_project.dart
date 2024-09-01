@@ -8,6 +8,7 @@ void main() {
   libaray.listBooks();
   libaray.loanBooks(book2, member);
   libaray.listloanBooks();
+  libaray.availableBooks();
 }
 
 class Book {
@@ -17,6 +18,21 @@ class Book {
   bool isAvailable;
 
   Book(this.title, this.author, this.isbn, this.isAvailable);
+}
+
+class Member {
+  String name;
+  String id;
+
+  Member(this.name, this.id);
+}
+
+class Loan {
+  Book book;
+  Member member;
+  DateTime loanDate;
+  DateTime? returnDate;
+  Loan(this.book, this.member, this.loanDate, [this.returnDate]);
 }
 
 class Libaray {
@@ -49,23 +65,19 @@ class Libaray {
     print("\n======+ Loan Books of Libarary +======\n");
     for (var loan in loans) {
       print(
-        "Title: ${loan.book.title} \nAuthor: ${loan.book.author}\nISBN: ${loan.book.isbn}\nAvailable: ${loan.book.isAvailable}\n------------------\n",
+        "Title: ${loan.book.title} \nAuthor: ${loan.book.author}\nISBN: ${loan.book.isbn}\nAvailable: ${loan.book.isAvailable}\nDate & Time of loan: ${loan.loanDate}\n------------------\n",
       );
     }
   }
-}
 
-class Member {
-  String name;
-  String id;
-
-  Member(this.name, this.id);
-}
-
-class Loan {
-  Book book;
-  Member member;
-  DateTime loanDate;
-  DateTime? returnDate;
-  Loan(this.book, this.member, this.loanDate, [this.returnDate]);
+  void availableBooks() {
+    print("\n======+ Available Books of Libarary +======\n");
+    for (var avaBooks in books) {
+      if (avaBooks.isAvailable == true) {
+        print(
+          "Title: ${avaBooks.title} \nAuthor: ${avaBooks.author}\nISBN: ${avaBooks.isbn}\nAvailable: ${avaBooks.isAvailable}\n------------------\n",
+        );
+      }
+    }
+  }
 }
