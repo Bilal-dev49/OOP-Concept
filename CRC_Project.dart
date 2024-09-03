@@ -46,6 +46,7 @@ class Bike extends Vahicle {
   bool hasCarrier;
   Bike(String brand, String model, int year, this.hasCarrier)
       : super(brand, model, year);
+  // overiding the funcuntion of super class
   @override
   void displayInfo() {
     super.displayInfo();
