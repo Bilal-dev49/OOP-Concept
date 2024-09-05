@@ -1,3 +1,4 @@
+// Abstraction in Dart is the process of hiding complex implementation details and showing only the essential features to the user.
 // Abstract class is a special class that can't we intialize, we can't create constructor of abstract class
 // In Abstract class we basiclly define the behaviour and methods.
 // If another class inherit that abstract class it implement that behaviour and method
@@ -5,9 +6,10 @@
 // Abstract method is a method that have no implementation, it is just a declaration of method.
 
 void main() {
-  NetworkServicesApi networkServicesApi = NetworkServicesApi("John");
+  NetworkServicesApi networkServicesApi = NetworkServicesApi("Hafi");
   Map<String, String> data = {
-    "email": "John@gmail.com",
+    "user name": "Hafi32150",
+    "email": "Syed@gmail.com",
     "password": "1234",
   };
   networkServicesApi.postApi(data);
