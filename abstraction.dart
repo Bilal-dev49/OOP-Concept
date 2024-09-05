@@ -8,7 +8,7 @@
 void main() {
   NetworkServicesApi networkServicesApi = NetworkServicesApi("Hafi");
   Map<String, String> data = {
-    "user name": "Hafi32150",
+    "username": "Hafi32150",
     "email": "Syed@gmail.com",
     "password": "1234",
   };
@@ -29,7 +29,7 @@ class NetworkServicesApi extends BaseApiServices {
   void postApi(var data) async {
     print('Post API is called');
     await Future.delayed(Duration(seconds: 2));
-    print("$name Sucessfully Register");
-    print(data["email"]);
+    print("$name Sucessfully Register with a username of ${data["username"]}");
+    print("Email: ${data["email"]}");
   }
 }
