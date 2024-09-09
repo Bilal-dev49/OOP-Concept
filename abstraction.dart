@@ -16,6 +16,7 @@ void main() {
 }
 
 abstract class BaseApiServices {
+  //Abstract method having no body
   void postApi(var data);
   void getApi();
 }
@@ -24,7 +25,10 @@ class NetworkServicesApi extends BaseApiServices {
   String name;
   NetworkServicesApi(this.name);
   @override
-  void getApi() {}
+  void getApi() {
+    print("Get API called");
+  }
+
   @override
   void postApi(var data) async {
     print('Post API is called');
