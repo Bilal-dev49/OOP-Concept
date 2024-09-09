@@ -4,7 +4,7 @@
 // If another class inherit that abstract class it implement that behaviour and method
 // Abstract method is a specialized method that define inside the abstract class.
 // Abstract method is a method that have no implementation, it is just a declaration of method.
-
+// Abstraction is the concept of simplifying complex systems by focusing on the essential details and ignoring the rest.
 void main() {
   NetworkServicesApi networkServicesApi = NetworkServicesApi("Hafi");
   Map<String, String> data = {
