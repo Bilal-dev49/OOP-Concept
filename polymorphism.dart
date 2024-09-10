@@ -4,6 +4,8 @@
 // Like a man at the same time is a father, a husband, an employee.
 // Method overloading refers to defining multiple methods with the same name
 // but different parameters within the same class
+// Dart avoids method overloading by allowing you to define default or
+// optional parameters instead of creating multiple methods with the same name.
 
 // Dart does'nt deal with overloading it only use overriding for polymorphism
 
