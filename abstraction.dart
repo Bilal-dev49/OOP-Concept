@@ -24,6 +24,8 @@ abstract class BaseApiServices {
 class NetworkServicesApi extends BaseApiServices {
   String name;
   NetworkServicesApi(this.name);
+  // method overriding involves creating a method in the child class
+  // that has the same name, parameters, and return type as a method in the parent class.
   @override
   void getApi() {
     print("Get API called");
