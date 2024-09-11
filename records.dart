@@ -1,4 +1,4 @@
-// Records lets you combine mutliple value in single object
+// Records lets you combine the mutliple values as a single object
 
 void main() {
   var person = (name: "Bilal", Id: 32049);
@@ -12,7 +12,7 @@ void main() {
   DateTime now = DateTime(2024, 8, 12);
   var (days, hours) = returnDaysHours(now);
   print("Days difference: $days");
-  print("Minutes difference: $hours");
+  print("Hours difference: $hours");
 }
 
 (int, int) arth(int x, int y) {
